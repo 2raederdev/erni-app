@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
 
-function App() {
+import Botonera from './botonera/botonera'
+import Contador from './contador/contador'
+import Imagen from './imagen/imagen'
+
+
+class App extends Component {
+
+  constructor(){
+    super()
+    this.state = {
+      valor: 1
+    }
+  }
+
+  incrementar = () => {
+    this.setState({...this.state, valor: this.state.valor + 1})
+  }
+
+  decrementar = () => {
+    this.setState({...this.state, valor: this.state.valor - 1})
+
+  }
+
+  render(){
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Imagen></Imagen>
+        <Contador></Contador>
+        <Botonera ></Botonera>
+
+
       </header>
     </div>
-  );
+  )}
 }
 
 export default App;

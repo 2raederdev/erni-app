@@ -5,4 +5,5 @@ Este repo es el resultado de lo aprendido en el Meetup realizado el 15.01.2020 y
 https://www.meetup.com/es-ES/frontend-madrid/events/267270644/
 
 Meetup impartido por David Carmona, Senior IT Consultant & Open Frontend Community Lead en ERNI.
+
 https://www.linkedin.com/in/davidcarmonamaroto/
